@@ -6,6 +6,11 @@
     --primary-color: #0f1b4c;
 }
 
+html,
+body {
+    scroll-behavior: smooth;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -62,9 +67,10 @@ a {
 .hero-wrap {
     position: relative;
     background: #e6f0ff;
-    height: 100vh;
+    height: calc(100vh - 90px);
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .navbar {
@@ -109,15 +115,11 @@ a {
     border-radius: 8px;
 }
 
-.hero {
-    margin-top: 130px;
-}
-
-.hero .info {
+.hero-wrap .info {
     width: 51%;
 }
 
-.hero .sub-title {
+.hero-wrap .sub-title {
     color: #687690;
     font-size: 1.8rem;
     font-weight: 500;
@@ -125,7 +127,7 @@ a {
     letter-spacing: 0.01em;
 }
 
-.hero .title {
+.hero-wrap .title {
     margin-top: 8px;
     color: #000336;
     font-size: 6.2rem;
@@ -133,7 +135,7 @@ a {
     line-height: 1.19;
 }
 
-.hero .desc {
+.hero-wrap .desc {
     margin-top: 30px;
     color: #5a6473;
     font-size: 1.8rem;
@@ -146,7 +148,7 @@ a {
     min-width: 170px;
 }
 
-.hero .img {
+.hero-wrap .img {
     position: absolute;
     right: calc((100vw - 1110px) / 2 - 100px);
     bottom: 0;
